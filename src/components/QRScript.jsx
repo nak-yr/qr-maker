@@ -24,11 +24,12 @@ class qrArgs extends Component {
             <div className="QRDisp">
                 <form onSubmit={this.handleSubmit}>
                     <label onChange={this.handleChange}>
-                        Text:
+                        Text<br />
                         <input type="text" placeholder="QR化したい文字列を入力" Value={this.state.value} />
                     </label>
-                    <input type="submit" value="Generate QR" />
+                    {/*<input type="submit" value="Generate QR" />*/}
                 </form>
+                Result
                 <QRCode value={this.state.value} />
             </div>
         )
